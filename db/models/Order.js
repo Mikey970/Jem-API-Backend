@@ -3,16 +3,16 @@ const mongoose = require("mongoose");
 mongoose.connect(process.env.MONGODB_URI || `mongodb://127.0.0.1:27017/jem`, { useNewURLParser: true, useUnifiedTopology: true });
 
 let Order = mongoose.model("Order", new mongoose.Schema({
-  name: {
+  "name": {
     type: String
   },
-  electronics: {
+  "electronics": {
     type: [Object]
   },
-  paid: {
+  "paid": {
     type: Boolean
   },
-  total: {
+  "total": {
     type: Number
   }
 }));

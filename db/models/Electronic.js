@@ -1,13 +1,26 @@
-import mongoose from 'mongoose';
-const Schema = mongoose.Schema;
+const mongoose = require('mongoose');
 
-let Eletronic = new Schema({
-    "type": { type: String },
-    "model": { type: String },
-    "brand": { type: String },
-    "year": { type: Number },
-    "price": { type: Number },
-    "image": { type: String },
-    });
+mongoose.connect(process.env.MONGODB_URI || `mongodb://127.0.0.1:27017/jem`, { useNewURLParser: true, useUnifiedTopology: true });
 
-export default Electronic;
+let Electronic = mongoose.model("Electronic", new mongoose.Schema({
+  "type": {
+    type: String
+  },
+  "model": {
+    type: String
+  },
+  "brand": { 
+    type: String 
+  },
+  "year": { 
+    type: Number 
+  },
+  "price": { 
+    type: Number 
+  },
+  "image": { 
+    type: String 
+  },
+}));
+
+module.exports = Electronic;
