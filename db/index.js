@@ -1,7 +1,7 @@
 const Order = require('./models/Order');
-const Electric = require('./models/Electronic');
+const Electronic = require('./models/Electronic');
 
 module.exports = {
-  Order,
-  Electric
+    Order,
+    Electronic
 };
