@@ -10,18 +10,18 @@ router.get('/', async (req, res) => {
     } catch(error) {
         console.log(error)
     }
-}
+},
 
 // Find one by Id
 router.get('/:id', async (req, res) => {
     try {
         const electronicId= req.params.id;
-        const electronic = await Electronic.findById({});
+        const electronic = await Electronic.findById(electronicId);
         res.send(electronic);
     } catch(error) {
         console.log(error)
     }
-}
+},
 
 // Create one 
 router.post('/', async (req, res) => {
@@ -35,10 +35,12 @@ router.post('/', async (req, res) => {
             "Price": Price,
             "Image": Image
         }
+        Electronic.create(newElectronic);
+        res.send(newElectronic);
     } catch {
         console.log(error)
     }
-}
+},
 
 // Update by Id
 router.put('/:id', async (req, res) => {
@@ -58,7 +60,7 @@ router.put('/:id', async (req, res) => {
     } catch(error) {
         console.log(error)
     }
-}
+},
 
 // Delete 
 router.delete('/:id', async (req, res) => {
