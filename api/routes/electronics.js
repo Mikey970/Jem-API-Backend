@@ -67,7 +67,7 @@ router.delete('/:id', async (req, res) => {
     try {
         let id = req.params.id;
         const deletedElectronic = await Electronic.findByIdAndDelete(id);
-        res.send(deleteElectronic);
+        res.send(deletedElectronic);
     } catch(error) {
         console.log(error)
     }
