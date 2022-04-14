@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
     } catch(error) {
         console.log(error)
     }
-}
+},
 
 // Find one by Id
 router.get('/:id', async (req, res) => {
@@ -21,7 +21,7 @@ router.get('/:id', async (req, res) => {
     } catch(error) {
         console.log(error)
     }
-}
+},
 
 // Create one 
 router.post('/', async (req, res) => {
@@ -38,7 +38,7 @@ router.post('/', async (req, res) => {
     } catch {
         console.log(error)
     }
-}
+},
 
 // Update by Id
 router.put('/:id', async (req, res) => {
@@ -58,7 +58,7 @@ router.put('/:id', async (req, res) => {
     } catch(error) {
         console.log(error)
     }
-}
+},
 
 // Delete 
 router.delete('/:id', async (req, res) => {
