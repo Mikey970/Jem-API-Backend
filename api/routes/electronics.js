@@ -56,7 +56,7 @@ router.put('/:id', async (req, res) => {
             "Image": Image
         } 
         const updatedElectronic = await Electronic.findByIdAndUpdate(id, newElectronic);
-        res.send(updatedElectronics);
+        res.send(updatedElectronic);
     } catch(error) {
         console.log(error)
     }
