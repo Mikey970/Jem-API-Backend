@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     try {
         const electronicId= req.params.id;
-        const electronic = await Electronic.findById({});
+        const electronic = await Electronic.findById(electronicId);
         res.send(electronic);
     } catch(error) {
         console.log(error)
@@ -35,6 +35,8 @@ router.post('/', async (req, res) => {
             "Price": Price,
             "Image": Image
         }
+        Electronic.create(newElectronic);
+        res.send(newElectronic);
     } catch {
         console.log(error)
     }
