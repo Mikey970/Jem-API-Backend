@@ -1,4 +1,4 @@
-let Order = require("../../db")
+let {Order} = require("../../db")
 const express = require("express")
 const router = express.Router()
 //import router
@@ -6,10 +6,16 @@ const router = express.Router()
 
 //create
 router.post('/', (request, response)=> {
- 
-  Order
+  console.log(Order)
+  console.log("hello world")
+  try {
+    Order
     .create(request.body)
     .then(data=> response.json(data)) 
+  } catch (error) {
+    console.error(error)
+  }
+  
 })
 
 //find by id
@@ -20,6 +26,12 @@ router.get('/:id', (request, response) => {
     .then(data=> response.json(data))
 })
 
+router.get("/", (request, response) => {
+  console.log(Order, "order")
+  Order
+    .find({})
+  .then(data=> response.json(data))
+})
 //update order by id
 router.put('/:id', (request, response)=> {
   let itemId = request.params.id
