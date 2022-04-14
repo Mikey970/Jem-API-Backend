@@ -15,7 +15,6 @@ Order.deleteMany({})
   .then(res => Order.create(orders))
   .then(orders =>{
     console.log('seeded orders');
-   
-   })
+})
 
 

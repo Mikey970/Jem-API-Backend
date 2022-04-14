@@ -2,74 +2,56 @@ const express = require('express');
 const { Electronic } = require('../../db');
 const router = express.Router();
 
-// Find All
+// Find All Electronics
 router.get('/', async (req, res) => {
     try {
         const electronics = await Electronic.find({});
         res.send(electronics);
     } catch(error) {
-        console.log(error)
+        console.error(error)
     }
 })
 
-// Find one by Id
+// Find One Order
 router.get('/:id', async (req, res) => {
     try {
-        const electronicId= req.params.id;
-        const electronic = await Electronic.findById(electronicId);
+        const id = req.params.id;
+        const electronic = await Electronic.findById(id);
         res.send(electronic);
     } catch(error) {
-        console.log(error)
+        console.error(error)
     }
 })
 
-// Create one 
+// Create New Electronic
 router.post('/', async (req, res) => {
     try {
-        const { Type, Model, Brand, Year, Price, Image } = req.body;
-        const newElectronic = {
-            "Type": Type,
-            "Model": Model,
-            "Brand": Brand,
-            "Year": Year,
-            "Price": Price,
-            "Image": Image
-        }
-        Electronic.create(newElectronic);
+        const newElectronic = await Electronic.create(req.body);
         res.send(newElectronic);
     } catch {
-        console.log(error)
+        console.error(error)
     }
 })
 
-// Update by Id
+// Update By Electronic By ID
 router.put('/:id', async (req, res) => {
     try {
         const id = req.params.id;
-        const { Type, Model, Brand, Year, Price, Image } = req.body;
-        const newElectronic = {
-            "Type": Type,
-            "Model": Model,
-            "Brand": Brand,
-            "Year": Year,
-            "Price": Price,
-            "Image": Image
-        } 
-        const updatedElectronic = await Electronic.findByIdAndUpdate(id, newElectronic);
+        const updatedElectronic = await Electronic.findByIdAndUpdate(id, req.body);
         res.send(updatedElectronic);
     } catch(error) {
-        console.log(error)
+        console.error(error)
     }
 })
 
-// Delete 
+// Delete Electronic
 router.delete('/:id', async (req, res) => {
     try {
         let id = req.params.id;
         const deletedElectronic = await Electronic.findByIdAndDelete(id);
         res.send(deletedElectronic);
     } catch(error) {
-        console.log(error)
+        console.error(error)
     }
 })
 
