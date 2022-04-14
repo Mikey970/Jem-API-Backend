@@ -3,6 +3,7 @@ const electronics = require('./db/data/electronicsData.json');
 const { Electronic, Order } = require('./db');
 const orders = require('./db/data/ordersData.json');
 
+
 Electronic.deleteMany({})
 .then(res => Electronic.create(electronics))
 .then(electronics => {
@@ -16,4 +17,5 @@ Order.deleteMany({})
     console.log('seeded orders');
    
    })
+
 
