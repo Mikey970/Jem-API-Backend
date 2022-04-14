@@ -29,3 +29,5 @@ router.put('/:id', (request, response)=> {
     .findByIdAndUpdate(itemId, newItemData, { new: true })
     .then(updatedItem=> response.json(updatedItem))
 })
+
+module.exports = router;
