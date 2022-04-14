@@ -1,0 +1,19 @@
+[{"Type": "TV" , "Model": "Samsung 82in 4K Smart TV", "Brand": "Samsung" , "Year":"2021" , "Price": 1199 , "Image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452232_sd.jpg" },
+  {"Type": "TV" , "Model": "LG 65in 4K Smart TV", "Brand": "LG" , "Year":"2021" , "Price": 1699 , "Image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6453/6453312_sd.jpg"},
+  {"Type": "TV" , "Model": "Insignia 55in 4K Smart TV", "Brand": "Insignia" , "Year":"2020" , "Price": 329 , "Image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6450/6450247_sd.jpg"},
+  {"Type": "TV" , "Model": "Vizio 40in 1080p Smart TV", "Brand": "Vizio" , "Year":"2019" , "Price": 229 , "Image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6465/6465459_sd.jpg"},
+  {"Type": "Game Console" , "Model": "Xbox Series X", "Brand": "Microsoft" , "Year":"2020" , "Price": 499, "Image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6428/6428324_sd.jpg" },
+  {"Type": "Game Console" , "Model": "Xbox Series S", "Brand": "Microsoft" , "Year":"2020" , "Price": 299, "Image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6430/6430277_sd.jpg" },
+  {"Type": "Game Console" , "Model": "Playstation 5", "Brand": "Sony" , "Year":"2020" , "Price": 499, "Image":" https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426149_sd.jpg"},
+  {"Type": "Game Console" , "Model": "Playstation 4", "Brand": "Sony" , "Year":"Sony" , "Price": 259, "Image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6302/6302942_sd.jpg" },
+  {"Type": "Phone" , "Model": "iPhone 13 128gb", "Brand": "Apple" , "Year":"2021" , "Price": 799, "Image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6443/6443174_sd.jpg" },
+  {"Type": "Phone" , "Model": "iPhone 12 128gb", "Brand": "Apple" , "Year":"2020" , "Price": 699, "Image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6009/6009904_sd.jpg" },
+  {"Type": "Phone" , "Model": "Galaxy S22 Ultra 128gb", "Brand": "Samsung" , "Year":"2021" , "Price": 949, "Image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6494/6494471_sd.jpg" },
+  {"Type": "Phone" , "Model": "iPhone SE 128gb", "Brand": "Apple" , "Year":"2021" , "Price": 0, "Image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6487/6487430_sd.jpg" },
+  {"Type": "Phone" , "Model": "Pixel 6 128gb", "Brand": "Google" , "Year":"2021" , "Price": 599, "Image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6483/6483635_sd.jpg;maxHeight=640;maxWidth=550" }
+,{"Type": "Laptop" , "Model": "Macbook Air M1 13.3in 256gb", "Brand": "Apple" , "Year":"2021" , "Price": 899, "Image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5721/5721600_sd.jpg" }
+,{"Type": "Laptop" , "Model": "Macbook Pro M1 13.3in 256gb", "Brand": "Apple" , "Year":"2021" , "Price": 1099, "Image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6418/6418601_sd.jpg" },
+{"Type": "Laptop" , "Model": "Galaxy Book Pro 13.3in", "Brand": "Samsung" , "Year":"2021" , "Price": 999, "Image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6457/6457790_sd.jpg" },
+{"Type": "Laptop" , "Model": "Surface Laptop Go", "Brand": "Microsoft" , "Year":"2020" , "Price": 549, "Image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6428/6428998_sd.jpg" },
+{"Type": "Earbuds" , "Model": "Airpods Pro", "Brand": "Apple" , "Year":"2021" , "Price": 199, "Image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4900/4900942_sd.jpg;maxHeight=640;maxWidth=550" },
+{"Type": "Earbuds" , "Model": "Beats Fit Pro", "Brand": "Beats by Dre" , "Year":"2019" , "Price": 199, "Image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6397/6397391_rd.jpg" }]
