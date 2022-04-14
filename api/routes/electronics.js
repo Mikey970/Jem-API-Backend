@@ -3,7 +3,7 @@ const { Electronic } = require('../../db');
 const router = express.Router();
 
 // Find All
-router.get('/', async (req, res) => {
+router.get('/', async (req, res)) => {
     try {
         const electronics = await Electronic.find({});
         res.send(electronics);
@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
 },
 
 // Find one by Id
-router.get('/:id', async (req, res) => {
+router.get('/:id', async (req, res)) => {
     try {
         const electronicId= req.params.id;
         const electronic = await Electronic.findById(electronicId);
@@ -24,7 +24,7 @@ router.get('/:id', async (req, res) => {
 },
 
 // Create one 
-router.post('/', async (req, res) => {
+router.post('/', async (req, res)) => {
     try {
         const { Type, Model, Brand, Year, Price, Image } = req.body;
         const newElectronic = {
@@ -43,7 +43,7 @@ router.post('/', async (req, res) => {
 },
 
 // Update by Id
-router.put('/:id', async (req, res) => {
+router.put('/:id', async (req, res)) => {
     try {
         const id = req.params.id;
         const { Type, Model, Brand, Year, Price, Image } = req.body;
@@ -63,7 +63,7 @@ router.put('/:id', async (req, res) => {
 },
 
 // Delete 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', async (req, res)) => {
     try {
         let id = req.params.id;
         const deletedElectronic = await Electronic.findByIdAndDelete(id);
@@ -71,6 +71,6 @@ router.delete('/:id', async (req, res) => {
     } catch(error) {
         console.log(error)
     }
-}
+},
 
 module.exports = router;
