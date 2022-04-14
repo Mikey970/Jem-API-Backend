@@ -3,22 +3,22 @@ const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI || `mongodb://127.0.0.1:27017/jem`, { useNewURLParser: true, useUnifiedTopology: true });
 
 let Electronic = mongoose.model("Electronic", new mongoose.Schema({
-  "type": {
+  "Type": {
     type: String
   },
-  "model": {
+  "Model": {
     type: String
   },
-  "brand": { 
+  "Brand": { 
     type: String 
   },
-  "year": { 
+  "Year": { 
+    type: String
+  },
+  "Price": { 
     type: Number 
   },
-  "price": { 
-    type: Number 
-  },
-  "image": { 
+  "Image": { 
     type: String 
   },
 }));
