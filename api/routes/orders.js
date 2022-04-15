@@ -16,7 +16,7 @@ router.get("/", async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const id = req.params.id;
-    const order = Order.findById(id);
+    const order = await Order.findById(id);
     res.send(order);
   } catch (error) {
     console.error(error);
@@ -28,7 +28,7 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res)=> {
   try {
     const newOrder = await Order.create(req.body);
-    res.json(data);
+    res.json(newOrder);
   } catch (error) {
     console.error(error);
   }
