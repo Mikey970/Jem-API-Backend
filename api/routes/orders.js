@@ -39,19 +39,19 @@ router.post('/', async (req, res)=> {
 router.put('/:id', async (req, res)=> {
   try {
     let id = req.params.id;
-    let updated = await Order.findByIdAndUpdate(id, req.body);
-    res.send(updated);
+    let updatedOrder = await Order.findByIdAndUpdate(id, req.body);
+    res.send(updatedOrder);
   } catch (error) {
     console.error(error);
   }
 })
 
 // Delete By Order By ID
-router.put('/:id', async (req, res)=> {
+router.delete('/:id', async (req, res)=> {
   try {
     let id = req.params.id;
-    let updated = await Order.findByIdAndUpdate(id, req.body);
-    res.send(updated);
+    let deletedOrder = await Order.findByIdAndDelete(id);
+    res.send(deletedOrder);
   } catch (error) {
     console.error(error);
   }
