@@ -46,4 +46,15 @@ router.put('/:id', async (req, res)=> {
   }
 })
 
+// Delete By Order By ID
+router.put('/:id', async (req, res)=> {
+  try {
+    let id = req.params.id;
+    let updated = await Order.findByIdAndUpdate(id, req.body);
+    res.send(updated);
+  } catch (error) {
+    console.error(error);
+  }
+})
+
 module.exports = router;
