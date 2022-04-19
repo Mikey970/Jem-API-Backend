@@ -11,3 +11,10 @@ The data for orders is created on the front end and then the api is updated. The
 
 ## Deployment
 The JEM API is deployed at https://jem-backend.herokuapp.com/api/
+
+## Programs Used
+For this project the following languages and programs were used
+MongoDB- for the database and collections
+Express- for creating the Restful Routes
+JSON- for the site data
+
