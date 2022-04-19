@@ -28,7 +28,6 @@ router.get('/:orderId/:electronicId', async (req, res) => {
 router.post('/', async (req, res)=> {
   try {
     const newOrderElectronic = await OrderElectronic.create(req.body);
-    console.log(newOrderElectronic)
     res.json(newOrderElectronic);
   } catch (error) {
     console.error(error);
