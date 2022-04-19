@@ -5,14 +5,14 @@ const router = express.Router();
 // Find All OrderElectronics
 router.get("/", async (req, res) => {
   try {
-    const orderElectronics = await OrderElectronics.find({})
+    const orderElectronics = await OrderElectronic.find({})
     res.send(orderElectronics);
   } catch (error) {
     console.error(error)
   }
 })
 
-// Find One Order
+// Find One OrderElectronics By Electronic ID and Order ID
 router.get('/:orderId/:electronicId', async (req, res) => {
   try {
     const { orderId, electronicId } = req.params;
@@ -24,18 +24,18 @@ router.get('/:orderId/:electronicId', async (req, res) => {
   
 })
 
-// Create New Order
+// Create New OrderElectronics
 router.post('/', async (req, res)=> {
   try {
-    const newOrderElectronic = await orderElectronic.create(req.body);
+    const newOrderElectronic = await OrderElectronic.create(req.body);
+    console.log(newOrderElectronic)
     res.json(newOrderElectronic);
   } catch (error) {
     console.error(error);
   }
-  
 })
 
-// Update By Order By ID
+// Update By OrderElectronics By Electronic ID and Order ID
 router.put('/:orderId/:electronicId', async (req, res)=> {
   try {
     const { orderId, electronicId } = req.params;
