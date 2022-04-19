@@ -14,6 +14,9 @@ let Order = mongoose.model("Order", new mongoose.Schema({
   },
   "total": {
     type: Number
+  },
+  "hash": {
+    type: Object
   }
 }));
 

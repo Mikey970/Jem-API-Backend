@@ -21,6 +21,10 @@ let Electronic = mongoose.model("Electronic", new mongoose.Schema({
   "Image": { 
     type: String 
   },
+  "Quantity": {
+    type: String,
+    default: 1
+  }
 }));
 
 module.exports = Electronic;
